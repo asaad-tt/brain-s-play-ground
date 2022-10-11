@@ -17,9 +17,9 @@ const Header = () => {
               through quizzes{" "}
             </h2>
             <p className="text-base text-gray-700 md:text-lg">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae. explicabo.
+              Brain's Play Ground is a web-based Audience Engagement Cloud
+              Platform for hosting interactive trivia quizzes at in-person,
+              virtual, and hybrid events.
             </p>
           </div>
           {/* <div className="flex items-center">
