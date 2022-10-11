@@ -3,10 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import QuizOption from "../QuizOption/QuizOption";
 import Swal from "sweetalert2";
+import { toast } from "react-toastify";
 
 const QuizQuestion = ({ questionAnswer }) => {
   //   console.log(questionAnswer);
   const { question, options, correctAnswer } = questionAnswer;
+  //   console.log(options);
 
   const eyeHandler = () => {
     Swal.fire({
@@ -24,7 +26,14 @@ const QuizQuestion = ({ questionAnswer }) => {
     });
   };
 
-  //   const handleQuestion = () => {};
+  const handleQuestion = (option) => {
+    // console.log(option);
+    if (option === correctAnswer) {
+      toast.success("Your answer is Correct. yahh!!!", { autoClose: 800 });
+    } else {
+      toast.warning("Your answer is wrong", { autoClose: 800 });
+    }
+  };
 
   return (
     <div className="px-28 mx-28 my-5 border border-purple-400 ">
@@ -38,7 +47,10 @@ const QuizQuestion = ({ questionAnswer }) => {
       </div>
       <div className="m-5 grid lg:grid-cols-2">
         {options.map((option) => (
-          <QuizOption option={option}></QuizOption>
+          <QuizOption
+            option={option}
+            handleQuestion={handleQuestion}
+          ></QuizOption>
         ))}
       </div>
     </div>

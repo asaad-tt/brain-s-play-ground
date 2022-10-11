@@ -11,7 +11,7 @@ import { QuizContext } from "../../Layout/Main";
 
 const Statistics = () => {
   const quizzes = useContext(QuizContext);
-  console.log(quizzes);
+  // console.log(quizzes);
   return (
     <div className="flex sm:w-100 justify-center mt-10">
       <LineChart
