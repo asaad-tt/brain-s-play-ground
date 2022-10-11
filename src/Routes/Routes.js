@@ -5,6 +5,7 @@ import ErrorPage from "../Components/ErrorPage/ErrorPage";
 import Home from "../Components/Home/Home";
 import QuizDetails from "../Components/QuizDetails/QuizDetails";
 import Statistics from "../Components/Statistics/Statistics";
+import Topic from "../Components/Topic/Topic";
 import Main from "../Layout/Main";
 
 const router = createBrowserRouter([
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Home></Home> },
       { path: "/home", element: <Home></Home> },
+      { path: "/topic", element: <Topic></Topic> },
       { path: "/about", element: <About></About> },
       { path: "/statistics", element: <Statistics></Statistics> },
       { path: "/blog", element: <Blog></Blog> },

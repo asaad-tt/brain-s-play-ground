@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const Quizzes = ({ quiz }) => {
   const { id, name, logo, total } = quiz;
   return (
-    <div className="card w-96 bg-red-100 shadow-xl">
+    <div className="card w-96  bg-red-100 shadow-xl">
       <figure>
-        <img src={logo} alt="Shoes" />
+        <img className="" src={logo} alt="Shoes" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{name}</h2>

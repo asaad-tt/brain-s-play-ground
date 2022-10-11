@@ -50,6 +50,20 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
+                to="/topic"
+                aria-label="Topic"
+                title="Topic"
+                className={({ isActive }) =>
+                  isActive
+                    ? "font-medium tracking-wide text-purple-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                    : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                }
+              >
+                Topic
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
                 to="/about"
                 aria-label="About"
                 title="About"
