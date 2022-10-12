@@ -11,3 +11,13 @@
     margin-right: 50px;
   }
 }
+@media screen and (max-width: 400px) {
+  .card {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .card {
+    padding-right: 20px;
+  }
+}

@@ -1,8 +1,9 @@
 import React from "react";
+import "./QuizOption.css";
 
 const QuizOption = ({ option, handleQuestion }) => {
   return (
-    <div className="flex items-center rounded border-2 border-indigo-600 p-5">
+    <div className="quiz_option flex items-center rounded border-2 border-indigo-600 p-5">
       <button onClick={() => handleQuestion(option)}>
         <input
           id="default-radio-1"

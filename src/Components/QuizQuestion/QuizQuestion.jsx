@@ -4,6 +4,7 @@ import React from "react";
 import QuizOption from "../QuizOption/QuizOption";
 import Swal from "sweetalert2";
 import { toast } from "react-toastify";
+import "./QuizQuestion.css";
 
 const QuizQuestion = ({ questionAnswer, index }) => {
   // console.log(questionAnswer);
@@ -41,7 +42,7 @@ const QuizQuestion = ({ questionAnswer, index }) => {
 
   // remove tag end
   return (
-    <div className="px-28 mx-28 py-5 my-5 border border-purple-400 ">
+    <div className="px-28 mx-28 py-5 my-5 shadow-lg ">
       <div className="flex items-center justify-between">
         <h1 className="text-xl  font-semibold sm:text-sm">
           Quiz <span>{index + 1}</span> : {removeTagQuestion}{" "}
@@ -52,9 +53,10 @@ const QuizQuestion = ({ questionAnswer, index }) => {
           icon={faEye}
         ></FontAwesomeIcon>
       </div>
-      <div className="m-5 grid lg:grid-cols-2 gap-2">
+      <div className="m-5 quiz_detail grid lg:grid-cols-2 gap-2">
         {options.map((option) => (
           <QuizOption
+            key={option}
             option={option}
             handleQuestion={handleQuestion}
           ></QuizOption>
