@@ -8,7 +8,7 @@ const Topic = () => {
 
   return (
     <div className="bg-lime-200">
-      <h2 className="text-3xl pt-5 text-center font-semibold text-purple-500">
+      <h2 className="text-2xl pt-5 text-center  text-purple-500">
         Choose your Topic
       </h2>
       <div className="grid lg:grid-cols-2 gap-y-5 justify-center mx-auto pl-32 py-20">

@@ -19,8 +19,7 @@ const Blog = () => {
           particular route. <br /> it is a standard library for routing in
           React. It enables the navigation among views of various components in
           a React Application, allows changing the browser URL, and keeps the UI
-          in sync with the URL. Let us create a simple application to React to
-          understand how the React Router works.
+          in sync with the URL.
         </p>
       </div>
 
@@ -44,25 +43,23 @@ const Blog = () => {
           defaultValue argument is only used when a component does not have a
           matching Provider above it in the tree. This default value can be
           helpful for testing components in isolation without wrapping them.
-          Note: passing undefined as a Provider value does not cause consuming
-          components to use defaultValue.
         </p>
       </div>
 
       <div className="question_one rounded border border-purple-400 mt-10 p-10">
         <h1 className="text-xl mb-5 font-bold">Q: What is useRef hook ?</h1>
         <p>
-          <span className="font-bold">Ans:</span> The useRef Hook allows you to
+          <span className="font-bold">Ans:</span> The useRef Hook allows us to
           persist values between renders. It can be used to store a mutable
           value that does not cause a re-render when updated. It can be used to
           access a DOM element directly. <br />
           useRef is like a “box” that can hold a mutable value in its .current
-          property. You might be familiar with refs primarily as a way to access
-          the DOM. If you pass a ref object to React with React will set it's
+          property. we might be familiar with refs primarily as a way to access
+          the DOM. If we pass a ref object to React with React will set it's
           .current property to the corresponding DOM node whenever that node
           changes. <br />
           However, useRef() is useful for more than the ref attribute. Its handy
-          for keeping any mutable value around similar to how you'd use instance
+          for keeping any mutable value around similar to how we'd use instance
           fields in classes.
         </p>
       </div>

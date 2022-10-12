@@ -15,7 +15,7 @@ const Statistics = () => {
   // console.log(quizzes);
   return (
     <div>
-      <h1 className="text-center pt-5 font-semibold text-2xl text-purple-500">
+      <h1 className="text-center pt-5  text-2xl text-purple-500">
         Graph of Quizzes{" "}
       </h1>
       <div className="flex sm:w-100 justify-center my-5">
