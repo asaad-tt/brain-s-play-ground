@@ -6,7 +6,9 @@ const ErrorPage = () => {
   return (
     <>
       <div className="flex flex-col min-h-[700px] justify-center items-center">
-        <h1 className="text-4xl">Its an Error! try again</h1>
+        <h1 className="text-4xl font-semibold text-warning">
+          Its an Error! try again
+        </h1>
         <br />
         {error && (
           <div>

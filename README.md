@@ -1,3 +1,28 @@
+# My Project Name:
+
+Brain's Play Ground
+
+\*\* i keep my folder name similar with my github private repository name to avoid git push, git commit and git related problems.
+
+# My live site link :
+
+https://tubular-piroshki-0a1e3a.netlify.app/
+
+# project Description:
+
+1. I make some components to build this site. for navbar, header, home and every section i make individual components and use them.
+
+2. I also use react router for single page application.
+
+3. i use one main file where i use navbar in common and also use outlet for changing element.
+
+4. to load data i use loader in my route file where i declare all my route . for receiving data i use useLoader hook .
+
+5. i use context api to pass data one component to another component without props drilling.
+
+6. in some point i use useNavigate hook for dynamic data load .
+<!-- *************************** -->
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

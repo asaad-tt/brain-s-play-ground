@@ -39,7 +39,6 @@ const QuizQuestion = ({ questionAnswer, index }) => {
   // remove tag start
   const tagQuestion = question;
   const removeTagQuestion = tagQuestion.replace(/(<([^>]+)>)/gi, "").trim();
-
   // remove tag end
   return (
     <div className="px-28 mx-28 py-5 my-5 shadow-lg ">
