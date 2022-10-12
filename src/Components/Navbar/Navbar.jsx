@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className="bg-gray-100">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-        <div className="relative flex items-center justify-between">
+        <div className="relative  flex items-center justify-between">
           <Link
             to="/"
             aria-label="Brain's Play Ground"
@@ -105,7 +106,10 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
-          <div className="lg:hidden">
+
+          {/* hamburgur menu  */}
+
+          <div className="lg:hidden ">
             <button
               aria-label="Open Menu"
               title="Open Menu"
@@ -128,9 +132,9 @@ const Navbar = () => {
               </svg>
             </button>
             {isMenuOpen && (
-              <div className="absolute top-0 left-0 w-full">
-                <div className="p-5 bg-white border rounded shadow-sm">
-                  <div className="flex items-center justify-between mb-4">
+              <div className=" absolute top-0 left-0 w-full">
+                <div className="hamburger p-5 bg-white border rounded shadow-sm">
+                  <div className=" flex items-center justify-between mb-4">
                     <div>
                       <Link
                         to="/"
@@ -177,34 +181,54 @@ const Navbar = () => {
                   <nav>
                     <ul className="space-y-4">
                       <li>
-                        <Link
-                          to="/"
+                        <NavLink
+                          to="/home"
                           aria-label="Home"
                           title="Home"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Home
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
-                        <Link
+                        <NavLink
+                          to="/topic"
+                          aria-label="Topic"
+                          title="Topic"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          Topic
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
                           to="/About"
                           aria-label="About"
                           title="About"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           About
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
-                        <Link
-                          to="/about"
-                          aria-label="About Us"
-                          title="About Us"
+                        <NavLink
+                          to="/statistics"
+                          aria-label="Statistics"
+                          title="Statistics"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          About Us
-                        </Link>
+                          Statistics
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          to="/blog"
+                          aria-label="Blog"
+                          title="Blog"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          Blog
+                        </NavLink>
                       </li>
                     </ul>
                   </nav>

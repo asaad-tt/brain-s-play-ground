@@ -2,7 +2,7 @@ import React from "react";
 
 const QuizOption = ({ option, handleQuestion }) => {
   return (
-    <div className="flex items-center ju border-2 border-indigo-600 p-5">
+    <div className="flex items-center rounded border-2 border-indigo-600 p-5">
       <button onClick={() => handleQuestion(option)}>
         <input
           id="default-radio-1"
