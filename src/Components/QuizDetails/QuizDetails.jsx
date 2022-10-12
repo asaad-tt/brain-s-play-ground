@@ -4,7 +4,7 @@ import QuizQuestion from "../QuizQuestion/QuizQuestion";
 
 const QuizDetails = () => {
   const quiz = useLoaderData();
-  //   console.log(quiz.data.questions);
+  // console.log(quiz.data.questions);
   const { name } = quiz.data;
   return (
     <div>
@@ -12,10 +12,11 @@ const QuizDetails = () => {
         Quiz of {name}
       </h1>
       <div>
-        {quiz.data.questions.map((questionAnswer) => (
+        {quiz.data.questions.map((questionAnswer, index) => (
           <QuizQuestion
             key={questionAnswer.id}
             questionAnswer={questionAnswer}
+            index={index}
           ></QuizQuestion>
         ))}
       </div>

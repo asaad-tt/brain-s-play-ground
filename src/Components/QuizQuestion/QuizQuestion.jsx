@@ -5,8 +5,8 @@ import QuizOption from "../QuizOption/QuizOption";
 import Swal from "sweetalert2";
 import { toast } from "react-toastify";
 
-const QuizQuestion = ({ questionAnswer }) => {
-  console.log(questionAnswer);
+const QuizQuestion = ({ questionAnswer, index }) => {
+  // console.log(questionAnswer);
   const { question, options, correctAnswer } = questionAnswer;
   // console.log(question);
 
@@ -35,11 +35,16 @@ const QuizQuestion = ({ questionAnswer }) => {
     }
   };
 
+  // remove tag start
+  const tagQuestion = question;
+  const removeTagQuestion = tagQuestion.replace(/(<([^>]+)>)/gi, "").trim();
+
+  // remove tag end
   return (
     <div className="px-28 mx-28 py-5 my-5 border border-purple-400 ">
       <div className="flex items-center justify-between">
-        <h1 className="text-xl font-semibold sm:text-sm">
-          Quiz <span>{question[1 + 0]}</span> : {question}{" "}
+        <h1 className="text-xl  font-semibold sm:text-sm">
+          Quiz <span>{index + 1}</span> : {removeTagQuestion}{" "}
         </h1>
         <FontAwesomeIcon
           onClick={eyeHandler}
